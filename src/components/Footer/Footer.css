@@ -26,6 +26,7 @@ p {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.3px;
 }
 
 .Contacts {
@@ -35,12 +36,14 @@ p {
 .Contacts h2 {
   font-weight: 700;
   font-size: 34px;
+  letter-spacing: 0.3px;
 }
 
 .Headquarters h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
+  letter-spacing: 0.3px;
 }
 
 .Social-media {
@@ -51,6 +54,7 @@ p {
   font-weight: 700;
   font-size: 20px;
   line-height: 32px;
+  letter-spacing: 0.3px;
 }
 
 .links {

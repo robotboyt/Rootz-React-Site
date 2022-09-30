@@ -10,24 +10,26 @@ const Intro = () => {
   return (
     <div className="intro-block">
       <div className="intro">
-        <div className="description">
-          <img src={headline} alt="Nature needs you" className="desc-img" />
-          <p>
-            The scale of the challenges facing our planet can seem daunting, but
-            we can all do something.
-          </p>
-          <div className="input-block">
-            <img
-              src={locationIcon}
-              alt="input location icon"
-              className="input-icon"
-            />
-            <input
-              type="search"
-              className="desc-input"
-              placeholder="Find the place to help"
-            />
-            <button className="input-btn">Search</button>
+        <div className="descrirption-block">
+          <div className="description">
+            <img src={headline} alt="Nature needs you" className="desc-img" />
+            <p>
+              The scale of the challenges facing our planet can seem daunting,
+              but we can all do something.
+            </p>
+            <div className="input-block">
+              <img
+                src={locationIcon}
+                alt="input location icon"
+                className="input-icon"
+              />
+              <input
+                type="search"
+                className="desc-input"
+                placeholder="Find the place to help"
+              />
+              <button className="input-btn">Search</button>
+            </div>
           </div>
         </div>
         <div className="images">
