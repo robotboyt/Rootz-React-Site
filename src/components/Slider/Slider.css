@@ -1,0 +1,19 @@
+.slider-block {
+  margin-top: 200px;
+  width: 100%;
+  height: 655px;
+  background-color: #ffbd9e;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+
+.slider-conroler {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 50%;
+}

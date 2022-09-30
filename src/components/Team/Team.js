@@ -18,9 +18,9 @@ const Team = () => {
           <div className="photo-block">
             <img src={line1} alt="line between" className="line1" />
             <img src={line2} alt="line between" className="line2" />
-            <img src={person1} alt="photo first person" className="person1" />
-            <img src={person2} alt="photo second person" className="person2" />
-            <img src={person3} alt="photo third person" className="person3" />
+            <img src={person1} alt="first person" className="person1" />
+            <img src={person2} alt="second person" className="person2" />
+            <img src={person3} alt="third person" className="person3" />
           </div>
         </div>
       </div>
