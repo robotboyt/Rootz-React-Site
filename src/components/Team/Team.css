@@ -1,0 +1,56 @@
+.about-team {
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.team-block {
+  display: flex;
+  justify-content: center;
+}
+
+.team-text {
+  text-align: center;
+}
+
+.team-photo {
+  width: 100%;
+  padding-top: 100px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.photo-block {
+  display: flex;
+  justify-content: center;
+}
+
+.person1 {
+  position: absolute;
+  margin-right: 800px;
+  margin-top: -90px;
+}
+
+.line1 {
+  position: absolute;
+  margin-right: 400px;
+  margin-top: -50px;
+}
+
+.person2 {
+  position: absolute;
+}
+
+.line2 {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 70px;
+}
+
+.person3 {
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -80px;
+}

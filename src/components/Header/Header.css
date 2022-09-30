@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 112px;
+  border-bottom: 4px solid black;
+}
+
+.header .logo {
+  user-select: none;
+}
+
+.header-block {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  font-size: 20px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+}
+
+.nav-bar ul li:first-child {
+  font-weight: bold;
+}
+
+.button {
+  width: 145px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
