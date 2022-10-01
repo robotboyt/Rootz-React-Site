@@ -1,15 +1,15 @@
 import React from "react";
-import "./Header.css";
+import styleHeader from "./Header.module.scss";
 import logo from "../../Assets/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="header-block">
-      <div className="header">
-        <div className="logo">
+    <div className={styleHeader.headerBlock}>
+      <div className={styleHeader.header}>
+        <div className={styleHeader.logo}>
           <img src={logo} alt="logo" />
         </div>
-        <div className="nav-bar">
+        <div className={styleHeader.navBar}>
           <ul>
             <li>Home</li>
             <li>Our mission</li>
@@ -17,7 +17,7 @@ const Header = () => {
             <li>Team</li>
           </ul>
         </div>
-        <div className="button" onClick={() => null}>
+        <div className={styleHeader.button} onClick={() => null}>
           Apply
         </div>
       </div>

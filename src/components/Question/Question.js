@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Question.css";
+import styleQuestion from "./Question.module.scss";
 
 const Question = () => {
   const [question1, setQuestion1] = useState(true);
@@ -7,9 +7,9 @@ const Question = () => {
   const [question3, setQuestion3] = useState(false);
 
   return (
-    <div className="question-block">
-      <div className="question-view">
-        <div className="about-question">
+    <div className={styleQuestion.questionBlock}>
+      <div className={styleQuestion.questionView}>
+        <div className={styleQuestion.aboutQuestion}>
           <h2>Ready To Get Started?</h2>
           <p>
             When pattern is mentioned in interior design, it is easy to asso-
@@ -18,9 +18,9 @@ const Question = () => {
           </p>
           <button>CONTACT US</button>
         </div>
-        <div className="questions">
-          <div className="question">
-            <div className="question-text">
+        <div className={styleQuestion.questions}>
+          <div className={styleQuestion.question}>
+            <div className={styleQuestion.questionText}>
               <h3>What can I do to protect our planet?</h3>
               {question1 ? (
                 <p>
@@ -34,8 +34,8 @@ const Question = () => {
               {question1 ? "-" : "+"}
             </button>
           </div>
-          <div className="question">
-            <div className="question-text">
+          <div className={styleQuestion.question}>
+            <div className={styleQuestion.questionText}>
               <h3>How to save nature ecology?</h3>
               {question2 ? (
                 <p>
@@ -51,8 +51,8 @@ const Question = () => {
               {question2 ? "-" : "+"}
             </button>
           </div>
-          <div className="question">
-            <div className="question-text">
+          <div className={styleQuestion.question}>
+            <div className={styleQuestion.questionText}>
               <h3>What is nature conservation?</h3>
               {question3 ? (
                 <p>

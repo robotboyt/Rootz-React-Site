@@ -1,0 +1,107 @@
+.formBlock {
+  display: flex;
+  justify-content: center;
+
+  .aboutForm {
+    width: 1120px;
+    height: 560px;
+    background-color: #ffbd9e;
+    display: flex;
+    border-radius: 20px;
+
+    .about {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #222433;
+
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        width: 60%;
+        font-size: 18px;
+      }
+    }
+
+    .formView {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form {
+        width: 422px;
+        height: 352px;
+        background-color: #f7f3f4;
+        border-radius: 16px;
+
+        h2 {
+          font-size: 32px;
+          display: flex;
+          justify-content: center;
+          color: #222433;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        input {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding-left: 12px;
+          width: 300px;
+          height: 48px;
+          background-color: #ffffff;
+          border-radius: 40px;
+          border: none;
+        }
+
+        button {
+          width: 312px;
+          height: 48px;
+          background: #f2726c;
+          border-radius: 30px;
+          border: none;
+          font-size: 13px;
+          font-weight: bold;
+          color: #ffffff;
+          cursor: pointer;
+        }
+
+        img {
+          position: absolute;
+        }
+
+        .leafRed {
+          margin-left: 380px;
+          margin-top: -20px;
+          transition: 0.3s ease-in-out;
+        }
+
+        .leafBlue {
+          margin-left: 400px;
+          margin-top: 60px;
+          transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+          .leafRed {
+            margin-left: 400px;
+            margin-top: -40px;
+          }
+
+          .leafBlue {
+            margin-left: 410px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,41 +4,51 @@ import group from "../../Assets/Group.svg";
 import headIcon from "../../Assets/head.svg";
 import parrot from "../../Assets/Parrot.svg";
 import locationIcon from "../../Assets/Vector.svg";
-import "./Intro.css";
+import styleIntro from "./Intro.module.scss";
 
 const Intro = () => {
   return (
-    <div className="intro-block">
-      <div className="intro">
-        <div className="descrirption-block">
-          <div className="description">
-            <img src={headline} alt="Nature needs you" className="desc-img" />
-            <p>
-              The scale of the challenges facing our planet can seem daunting,
-              but we can all do something.
-            </p>
-            <div className="input-block">
+    <div className={styleIntro.introView}>
+      <div className={styleIntro.introBlock}>
+        <div className={styleIntro.intro}>
+          <div className={styleIntro.descrirptionBlock}>
+            <div className={styleIntro.description}>
               <img
-                src={locationIcon}
-                alt="input location icon"
-                className="input-icon"
+                src={headline}
+                alt="Nature needs you"
+                className={styleIntro.descImg}
               />
-              <input
-                type="search"
-                className="desc-input"
-                placeholder="Find the place to help"
-              />
-              <button className="input-btn">Search</button>
+              <p>
+                The scale of the challenges facing our planet can seem daunting,
+                but we can all do something.
+              </p>
+              <div>
+                <img
+                  src={locationIcon}
+                  alt="input location icon"
+                  className={styleIntro.inputIcon}
+                />
+                <input
+                  type="search"
+                  className={styleIntro.descInput}
+                  placeholder="Find the place to help"
+                />
+                <button className={styleIntro.inputBtn}>Search</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="images">
-          <img src={parrot} alt="parrot" className="parrot" />
-          <img src={group} alt="parrot" className="group" />
-          <img src={headIcon} alt="parrot" className="headIcon" />
-          <div className="members">
-            <span id="span-1">Members</span>
-            <span id="span-2">29100</span>
+          <div className={styleIntro.images}>
+            <img src={parrot} alt="parrot" className="parrot" />
+            <img src={group} alt="group" className={styleIntro.group} />
+            <img
+              src={headIcon}
+              alt="headLike"
+              className={styleIntro.headIcon}
+            />
+            <div className={styleIntro.members}>
+              <span id="span-1">Members</span>
+              <span className={styleIntro.span2}>29100</span>
+            </div>
           </div>
         </div>
       </div>
