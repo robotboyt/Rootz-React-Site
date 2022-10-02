@@ -6,12 +6,12 @@ import Question from "../Question/Question";
 import Slider from "../Slider/Slider";
 import Team from "../Team/Team";
 import Footer from "../Footer/Footer";
-import "./Lending.css";
+import styleLending from "./Lending.module.scss";
 
 const Lending = () => {
   return (
-    <div className="lending">
-      <div className="header-info">
+    <div className={styleLending.lending}>
+      <div className={styleLending.headerInfo}>
         <Header />
         <Intro />
       </div>

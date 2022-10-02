@@ -1,0 +1,80 @@
+.sliderBlock {
+  margin-top: 200px;
+  height: 600px;
+  background-color: #ffbd9e;
+
+  .slider {
+    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      user-select: none;
+    }
+
+    .swiper {
+      height: 450px;
+    }
+
+    .slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .activePhoto {
+      display: flex;
+      justify-content: center;
+    }
+
+    .mainPhoto {
+      position: absolute;
+      margin-left: -180px;
+      transition: 0.3 ease-in-out;
+      width: 186px;
+      height: 163px;
+    }
+
+    .mainText {
+      position: absolute;
+      margin-top: 180px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    .mainDescription {
+      position: absolute;
+      margin-top: 220px;
+      width: 70%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .bg {
+      position: absolute;
+    }
+
+    .notActivePhoto {
+      margin-top: 100px;
+      width: 206px;
+      height: 208px;
+    }
+
+    .notActiveText {
+      margin-top: -120px;
+      color: white;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    @media screen and (max-width: 1675px) {
+      .mainText {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,49 +1,66 @@
-import React, { useState } from "react";
-import plastic from "../../Assets/plastic.png";
-import green from "../../Assets/green.png";
-import ocean from "../../Assets/ocean.png";
-import forest from "../../Assets/forest.png";
-import energy from "../../Assets/energy.png";
-import left from "../../Assets/ChevronLeft.svg";
-import right from "../../Assets/ChevronRight.svg";
+import React from "react";
 import bg from "../../Assets/bg.svg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import "./Slider.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import { imgArr } from "./arr";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import styleSlider from "./Slider.module.scss";
 
 const Slider = () => {
-  const [count, setCount] = useState(0);
-  const gallery = [plastic, green, ocean, forest, energy];
-  const currentImg = gallery[count];
-
-  function toLeft() {
-    setCount(count - 1);
-    if (count === 0) {
-      setCount(0);
-    }
-  }
-
-  function toRight() {
-    setCount(count + 1);
-    if (count === 4) {
-      setCount(4);
-    }
-  }
-
   return (
-    <div className="slider-block">
-      <div className="slider"></div>
-      <div className="slider-conroler">
-        <img src={left} alt="slide to left" className="left" onClick={toLeft} />
-        <p className="current">
-          <span className="others">{count + 1}/5</span>
-        </p>
-        <img
-          src={right}
-          alt="slide to right"
-          className="right"
-          onClick={toRight}
-        />
+    <div className={styleSlider.sliderBlock}>
+      <div className={styleSlider.slider}>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={(window.screen = 1200 ? 100 : 30)}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+            type: "fraction",
+          }}
+          modules={[Pagination, Navigation]}
+          navigation
+          className={styleSlider.swiper}
+        >
+          {imgArr.map((item) => (
+            <SwiperSlide
+              key={item.id + item.name.toString()}
+              className={styleSlider.slide}
+            >
+              {({ isActive }) => (
+                <div>
+                  {isActive ? (
+                    <div className={styleSlider.activePhoto}>
+                      <img
+                        src={bg}
+                        className={styleSlider.bg}
+                        alt="background"
+                      />
+                      <img
+                        src={item.img}
+                        className={styleSlider.mainPhoto}
+                        alt={item.alt}
+                      />
+                      <h2 className={styleSlider.mainText}>{item.name}</h2>
+                      <p className={styleSlider.mainDescription}>{item.text}</p>
+                    </div>
+                  ) : (
+                    <div>
+                      <img
+                        src={item.img}
+                        className={styleSlider.notActivePhoto}
+                        alt={item.alt}
+                      />
+                      <h2 className={styleSlider.notActiveText}>{item.name}</h2>
+                    </div>
+                  )}
+                </div>
+              )}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

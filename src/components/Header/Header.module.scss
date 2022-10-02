@@ -41,5 +41,20 @@
       font-weight: bold;
       cursor: pointer;
     }
+
+    @media (max-width: 1300px) {
+      .navBar ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .navBar ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+      }
+    }
   }
 }
