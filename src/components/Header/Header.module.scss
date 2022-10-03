@@ -1,6 +1,7 @@
 .headerBlock {
   display: flex;
   justify-content: center;
+  background-color: #f7f3f4;
 
   .header {
     display: flex;
@@ -29,6 +30,58 @@
       }
     }
 
+    .menuBar {
+      width: 100%;
+      margin-left: -5%;
+      height: 800px;
+      margin-top: 920px;
+      position: absolute;
+      background: #f7f3f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      ul {
+        margin-top: 50px;
+      }
+
+      li {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: -30px;
+        text-align: center;
+        list-style: none;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 150%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        &:first-child {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 150%;
+        }
+      }
+
+      button {
+        margin-top: 50px;
+        width: 337px;
+        height: 48px;
+        background: #ffffff;
+        box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 140%;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
     .button {
       width: 145px;
       height: 48px;
@@ -40,6 +93,7 @@
       align-items: center;
       font-weight: bold;
       cursor: pointer;
+      border: none;
     }
 
     @media (max-width: 1300px) {

@@ -1,6 +1,7 @@
 .introView {
   display: flex;
   justify-content: center;
+  background-color: #f7f3f4;
 
   .introBlock {
     padding-bottom: 60px;
@@ -47,6 +48,17 @@
             box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
           }
 
+          @media (max-width: 980px) {
+            .descInput {
+              width: 339px;
+              height: 64px;
+            }
+
+            p {
+              width: 78%;
+            }
+          }
+
           .inputIcon {
             position: absolute;
             margin-left: 20px;
@@ -54,7 +66,6 @@
             user-select: none;
           }
           .inputBtn {
-            position: absolute;
             width: 122px;
             height: 48px;
             background: #f2726c;
@@ -75,20 +86,20 @@
 
         .group {
           position: absolute;
-          margin-left: -560px;
-          margin-top: 300px;
+          margin-left: -55px;
+          margin-top: -300px;
         }
 
         .headIcon {
           position: absolute;
-          margin-top: 330px;
-          margin-left: -530px;
+          margin-top: -270px;
+          margin-left: -20px;
         }
 
         .members {
           position: absolute;
-          margin-top: -100px;
-          margin-left: -70px;
+          margin-top: -110px;
+          margin-left: -20px;
           display: flex;
           flex-direction: column;
           font-size: 20px;
@@ -105,11 +116,53 @@
     @media (max-width: 1200px) {
       .descrirptionBlock {
         width: 40%;
-        background-color: forestgreen;
       }
 
       .images {
         width: 40%;
+      }
+    }
+
+    @media screen and (max-width: 980px) {
+      .intro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .descrirptionBlock {
+        margin-left: 210px;
+        margin-top: -40px;
+
+        .descImg {
+          width: 336px;
+          height: 181px;
+        }
+      }
+
+      .images {
+        margin-left: 300px;
+      }
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .introView {
+    .introBlock {
+      .intro {
+        .images {
+          .group {
+            position: absolute;
+            margin-left: -510px;
+            margin-top: 280px;
+          }
+
+          .headIcon {
+            margin-top: 310px;
+            margin-left: -480px;
+          }
+        }
       }
     }
   }

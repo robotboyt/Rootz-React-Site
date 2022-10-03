@@ -5,6 +5,7 @@ const Question = () => {
   const [question1, setQuestion1] = useState(true);
   const [question2, setQuestion2] = useState(false);
   const [question3, setQuestion3] = useState(false);
+  const [contact, setContact] = useState(false);
 
   return (
     <div className={styleQuestion.questionBlock}>
@@ -16,7 +17,14 @@ const Question = () => {
             ciate it with a geometric patterned wallpaper or colourful prints on
             interior fabrics.
           </p>
-          <button>CONTACT US</button>
+          <button onClick={() => setContact(!contact)}>
+            {contact ? "HIDE CONTACT" : "CONTACT US"}
+          </button>
+          {contact ? (
+            <div className={styleQuestion.contactText}>
+              1234 Taliban Los Angeles, La 1234567 (123)456-7890
+            </div>
+          ) : null}
         </div>
         <div className={styleQuestion.questions}>
           <div className={styleQuestion.question}>

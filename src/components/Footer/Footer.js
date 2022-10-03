@@ -10,8 +10,7 @@ const Footer = () => {
       <div className={styleFooter.footer}>
         <div className={styleFooter.Contacts}>
           <h2>CONTACTS</h2>
-          <p>2019 Rootz Foundation.</p>
-          <p>All RightReserverd</p>
+          <p>2019 Rootz Foundation. All RightReserverd</p>
         </div>
         <div className={styleFooter.Headquarters}>
           <h2>Headquarters</h2>

@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import leafRed from "../../Assets/leafRed.svg";
 import leafBlue from "../../Assets/leafBlue.svg";
 import styleForm from "./Form.module.scss";
 
 const Form = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const getDataForm = (e) => {
+    e.preventDefault();
+    console.log(`User Name: ${name}`);
+    console.log(`User Email: ${email}`);
+
+    setName("");
+    setEmail("");
+  };
+
   return (
     <div className={styleForm.formBlock}>
       <div className={styleForm.aboutForm}>
@@ -29,9 +41,19 @@ const Form = () => {
             />
             <h2>Log In</h2>
             <form>
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Email" />
-              <button>BOOK A DEMO</button>
+              <input
+                type="text"
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button onClick={getDataForm}>BOOK A DEMO</button>
             </form>
           </div>
         </div>

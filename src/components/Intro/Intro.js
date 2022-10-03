@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import headline from "../../Assets/Headline.svg";
 import group from "../../Assets/Group.svg";
 import headIcon from "../../Assets/head.svg";
@@ -7,6 +7,11 @@ import locationIcon from "../../Assets/Vector.svg";
 import styleIntro from "./Intro.module.scss";
 
 const Intro = () => {
+  const [place, setPlace] = useState("");
+
+  const getPlace = () => {
+    console.log(place);
+  };
   return (
     <div className={styleIntro.introView}>
       <div className={styleIntro.introBlock}>
@@ -32,8 +37,11 @@ const Intro = () => {
                   type="search"
                   className={styleIntro.descInput}
                   placeholder="Find the place to help"
+                  onChange={(e) => setPlace(e.target.value)}
                 />
-                <button className={styleIntro.inputBtn}>Search</button>
+                <button className={styleIntro.inputBtn} onClick={getPlace}>
+                  Search
+                </button>
               </div>
             </div>
           </div>
@@ -47,7 +55,7 @@ const Intro = () => {
             />
             <div className={styleIntro.members}>
               <span id="span-1">Members</span>
-              <span className={styleIntro.span2}>29100</span>
+              <span className={styleIntro.span2}>29128</span>
             </div>
           </div>
         </div>

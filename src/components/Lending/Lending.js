@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "../Form/Form";
 import Header from "../Header/Header";
 import Intro from "../Intro/Intro";
@@ -9,17 +9,26 @@ import Footer from "../Footer/Footer";
 import styleLending from "./Lending.module.scss";
 
 const Lending = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  window.addEventListener("resize", () => {
+    setWidth(window.innerWidth);
+  });
+
   return (
     <div className={styleLending.lending}>
-      <div className={styleLending.headerInfo}>
-        <Header />
-        <Intro />
-      </div>
-      <Team />
-      <Form />
-      <Question />
-      <Slider />
-      <Footer />
+      <Header width={width} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {!menuOpen ? (
+        <div>
+          <Intro />
+          <Team width={width} />
+          <Form />
+          <Question />
+          <Slider width={width} />
+          <Footer />
+        </div>
+      ) : null}
     </div>
   );
 };

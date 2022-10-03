@@ -76,5 +76,17 @@
         width: 100%;
       }
     }
+
+    @media screen and (max-width: 1200px) {
+      .mainDescription {
+        width: 30%;
+      }
+
+      @media screen and (max-width: 500px) {
+        .mainDescription {
+          width: 40%;
+        }
+      }
+    }
   }
 }

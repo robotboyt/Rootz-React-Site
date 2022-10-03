@@ -3,7 +3,7 @@
   justify-content: center;
 
   .questionView {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     width: 1120px;
     min-height: 389px auto;
@@ -41,6 +41,11 @@
         font-weight: 700;
         font-size: 13px;
         border: none;
+      }
+
+      .contactText {
+        padding-top: 30px;
+        width: 30%;
       }
     }
 
@@ -85,6 +90,45 @@
           justify-content: center;
           align-items: center;
           transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    .questionView {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .aboutQuestion {
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        h2 {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 150%;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 175%;
+        }
+
+        button {
+          width: 166px;
+          height: 48px;
+        }
+      }
+
+      .questions {
+        width: 90%;
+        .question {
+          button {
+            margin-top: 20px;
+          }
         }
       }
     }

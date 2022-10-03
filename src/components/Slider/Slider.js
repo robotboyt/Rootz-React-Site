@@ -8,13 +8,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import styleSlider from "./Slider.module.scss";
 
-const Slider = () => {
+const Slider = ({ width }) => {
   return (
     <div className={styleSlider.sliderBlock}>
       <div className={styleSlider.slider}>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={(window.screen = 1200 ? 100 : 30)}
+          slidesPerView={width <= 1200 ? 1 : 4}
+          spaceBetween={width <= 1200 ? 100 : 30}
           centeredSlides={true}
           pagination={{
             clickable: true,
