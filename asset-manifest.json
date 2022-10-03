@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Rootz-React-Site/static/css/main.f4332d38.css",
+    "main.js": "/Rootz-React-Site/static/js/main.bf668ce9.js",
+    "static/js/787.af96b6b4.chunk.js": "/Rootz-React-Site/static/js/787.af96b6b4.chunk.js",
+    "static/media/img3.png": "/Rootz-React-Site/static/media/img3.e0df5d46495556f6d8f5.png",
+    "static/media/forest.png": "/Rootz-React-Site/static/media/forest.b62d87cab897615e344b.png",
+    "static/media/green.png": "/Rootz-React-Site/static/media/green.78323945e4b031edb833.png",
+    "static/media/img1.png": "/Rootz-React-Site/static/media/img1.68a90af0b44bb6c98a70.png",
+    "static/media/img2.png": "/Rootz-React-Site/static/media/img2.71d5025ce300961f7c71.png",
+    "static/media/plastic.png": "/Rootz-React-Site/static/media/plastic.42977cd104d28b091e22.png",
+    "static/media/energy.png": "/Rootz-React-Site/static/media/energy.b4d0854fe7cad4f783ad.png",
+    "static/media/ocean.png": "/Rootz-React-Site/static/media/ocean.c02c51ed03b1bca38c37.png",
+    "static/media/Headline.svg": "/Rootz-React-Site/static/media/Headline.08329e54011d50e0ae4c61a6c0726c93.svg",
+    "static/media/Parrot.svg": "/Rootz-React-Site/static/media/Parrot.56aecec0856b9bc983a99df8d42918f4.svg",
+    "static/media/Logo.svg": "/Rootz-React-Site/static/media/Logo.cf8efec9abbf7af826512b47eef50377.svg",
+    "static/media/in.svg": "/Rootz-React-Site/static/media/in.ecb0ed1ab33db9026ef71fac92ca5cce.svg",
+    "static/media/Twitter.svg": "/Rootz-React-Site/static/media/Twitter.27dd61800c509a9a8ccae047fafedb74.svg",
+    "static/media/bg.svg": "/Rootz-React-Site/static/media/bg.497f44bf041d25586ed132f1cfacaf23.svg",
+    "static/media/Group.svg": "/Rootz-React-Site/static/media/Group.5bdd08dcdb26313abb4270362c8ea373.svg",
+    "index.html": "/Rootz-React-Site/index.html",
+    "static/media/iconClose.svg": "/Rootz-React-Site/static/media/iconClose.3f1af1f8f0587693311deac92a52f0e5.svg",
+    "static/media/menuIcon.svg": "/Rootz-React-Site/static/media/menuIcon.8be7e778dcdd6574e75cb453a9c1544c.svg",
+    "static/media/head.svg": "/Rootz-React-Site/static/media/head.7a4612135beaca66f9d73873e24c3896.svg",
+    "static/media/line1.svg": "/Rootz-React-Site/static/media/line1.02b911983d87b2c74719750839b85c06.svg",
+    "static/media/lineSmall1.svg": "/Rootz-React-Site/static/media/lineSmall1.c5e2e7c9361ee72d3b49b4308a7b82c0.svg",
+    "static/media/lineSmall2.svg": "/Rootz-React-Site/static/media/lineSmall2.098f6256c4921a2b0ff4b3749d62dd1b.svg",
+    "static/media/line2.svg": "/Rootz-React-Site/static/media/line2.99cb81c438dd7914d41c941975f012e1.svg",
+    "static/media/facebook.svg": "/Rootz-React-Site/static/media/facebook.4c8486040873bfd88062b37ab76d5d66.svg",
+    "static/media/leafBlue.svg": "/Rootz-React-Site/static/media/leafBlue.1700ae261abd9ab731f098f914a724e9.svg",
+    "static/media/leafRed.svg": "/Rootz-React-Site/static/media/leafRed.b993e697d0acbdcc2fe163a981169264.svg",
+    "static/media/Vector.svg": "/Rootz-React-Site/static/media/Vector.fc131d571c5d4c2a1ac87bb03cb6060c.svg",
+    "main.f4332d38.css.map": "/Rootz-React-Site/static/css/main.f4332d38.css.map",
+    "main.bf668ce9.js.map": "/Rootz-React-Site/static/js/main.bf668ce9.js.map",
+    "787.af96b6b4.chunk.js.map": "/Rootz-React-Site/static/js/787.af96b6b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4332d38.css",
+    "static/js/main.bf668ce9.js"
+  ]
+}
